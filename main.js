@@ -17,10 +17,10 @@ const arrayMethods = {
         return myArrCopy;
     },
     mySort: function (sortFn) {
-        let sortable = this,
-            sortFunc = (sortFn && typeof sortFn === 'function')
-                ? sortFn
-                : (a, b) => a.toString() > b.toString();
+        let sortable = thisж
+        let sortFunc = (sortFn && typeof sortFn === 'function')
+            ? sortFn
+            : (a, b) => a.toString() > b.toString();
         for (let i = 0; i < sortable.length; i++) {
             count('newArrayMethods', 'mySort');
             for (let j = 0; j < sortable.length - i - 1; j++) {
@@ -69,7 +69,7 @@ mapped.myForEach(el => {
 timeEnd('newArrayMethods', 'myForEach');
 
 time('newArrayMethods', 'myFilter');
-mapped.myFilter(el => !(el % 2));
+let filtered = mapped.myFilter(el => !(el % 2));
 timeEnd('newArrayMethods', 'myFilter');
 
 time('newArrayMethods', 'mySort');
