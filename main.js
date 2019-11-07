@@ -32,8 +32,8 @@ const arrayMethods = {
         return sortable;
     },
     myFilter: function (cb, thisArg) {
-        let filterRes = [],
-            myArr = thisArg || this;
+        let filterRes = [];
+        let myArr = thisArg || this;
         for (let i = 0; i < myArr.length; i++) {
             count('newArrayMethods', 'myFilter');
             if (cb(myArr[i], i, myArr)) {
